@@ -103,8 +103,8 @@ body{
     .switch 
     {
       display: inline-block;
-      width: 40px;
-      height: 20px;
+      width: 50px;
+      height: 19px;
       margin: 4px;
       transform: translateY(50%);
       position: relative;
@@ -139,7 +139,7 @@ body{
     
     input:checked + .slider:before
     {
-      transform: translateX(30px); /*translateX(w-h)*/
+      transform: translateX(10px); /*translateX(w-h)*/
       background-color: limeGreen;
     }
     
@@ -151,7 +151,7 @@ body{
     .switch200 .slider:before
     {
       width: 200%;
-      transform: translateX(-82px); /*translateX(-(w-h))*/
+      transform: translateX(-90px); /*translateX(-(w-h))*/
     }
     
     .switch200 input:checked + .slider:before
