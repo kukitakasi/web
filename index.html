@@ -1,39 +1,1528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web</title>
-    <link rel="stylesheet" href="beauty.css">
-    <link rel="stylesheet" href="magic.css"> 
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/73464606?v=4">
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="raushan githube portfolio page">
+
+    <!-- ========== Page Title ========== -->
+    <title>Web Portfolio</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/73464606" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/flaticon-set.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/validnavs.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/unit-test.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <!-- ========== End Stylesheet ========== -->
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
 </head>
-<body>
-        <div class="header">
-            <div class="nav-profile">
-              <img  height="48" width="48" src="https://avatars.githubusercontent.com/u/73464606?v=4" alt="profile pic" class="profile-pic">
+
+<body class="onepage-version bg-fixed" style="background-image: url(assets/img/shape/banner.jpg);">
+
+    <!-- Start Preloader 
+    ============================================= -->
+    <div id="preloader">
+        <div id="ventix-preloader" class="ventix-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
             </div>
-            <div id="nav">
-                <div class="nav">
-                    <nav class="top-nav">
-                     <a class="top-nav-a">Home</a>
-                     <a class="top-nav-a">About</a>
-                     <a class="top-nav-a">Project</a>
-                     <a class="top-nav-a">Tools</a>
-                    </nav>
-                </div>
-                <div class="magic-button text">
-                    Magic
-                    <label class="switch switch200">
-                    <input type="checkbox">
-                    <span class="slider slider200"></span>
-                    </label>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav onepage-menu mobile-nav-only attr-border navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
+
+
+            <div class="container d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="https://kukitakasi.github.io/web/">
+                        <!-- <img style="border-radius: 20px;" src="assets/img/frontlogo.webp" class="logo" alt="Logo"> -->
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img style="border-radius: 20px;" src="assets/img/frontlogo.webp" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a class="smooth-menu" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <div class="main-wrapper">
+        <!-- Start Side Navbar 
+        ============================================= -->
+        <div class="side-navbar-items">
+
+            <div class="nav-wrapper">
+                <div class="side-navbar">
+                    <div class="side-nav-menu">
+                        <a class="smooth-menu" href="https://kukitakasi.github.io/web/"><img style="border-radius: 20px;" src="https://avatars.githubusercontent.com/u/73464606?v=4" alt="Logo"></a>
+                    </div>
+                    <div class="nav-toggle">
+                        <img src="assets/img/menu-white.svg" alt="Menu">
+                    </div>
+                    <div class="author-social">
+                        <input type="checkbox" id="toggle" class="share-toggle" hidden="">
+                        <label for="toggle" class="share-button">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                        <a href="https://www.facebook.com/raushan65/" class="share-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/devraushan_" class="share-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kukitakasi/" class="share-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="nav-side">
+                    <div class="nav-items simple-menu">
+
+                        <div class="nav-toggle"><i class="fas fa-times"></i></div>
+
+
+                        <div class="nav-item dropdown">
+                            <a class="smooth-menu" href="https://kukitakasi.github.io/web">Home</a>
+                            <!-- <a class="dropdown-toggle" href="#"><i class="fas fa-plus"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home vCard</a></li>
+                                <li><a href="index-onepage.html">Home Onepage</a></li>
+                                <li><a href="index-light.html">Home vCard Light</a></li>
+                                <li><a href="index-light-onepage.html">Home Onepage Light</a></li>
+                                <li><a href="index-2.html">Home Two vCard</a></li>
+                                <li><a href="index-2-onepage.html">Home Two Onepage</a></li>
+                                <li><a href="index-2-light.html">Home Two vCard Light</a></li>
+                                <li><a href="index-2-onepage-light.html">Home Two Onepage Light</a></li>
+                            </ul>
+                            <div class="nav-item-wrapper"></div> -->
+                        </div>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#services">Services</a>
+                            <div class="nav-item-wrapper"></div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#about">About</a>
+                            <div class="nav-item-wrapper"></div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#portfolio">Portfolio</a>
+                            <div class="nav-item-wrapper"></div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#blog">Blog</a>
+                            <div class="nav-item-wrapper"></div>
+                        </div>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#contact">Contact</a>
+                            <div class="nav-item-wrapper"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Side Navbar -->
+
+        <!-- Start Banner
+        ============================================= -->
+        <div id="home" class="banner-style-two-area default-padding">
+
+            <div class="personal-social">
+                <ul>
+                    
+                   
+                    <li class="dribbble">
+                        <a href="https://github.com/kukitakasi">
+                            <img style="max-width: 32px; margin-left: -5px;"  src="https://github.githubassets.com/favicons/favicon.svg" alt="sigmawire">
+                            <!-- <i class="fab fa-dribbble"></i> -->
+                        </a>
+                    </li>
+                    <li class="behance">
+                        <a href="https://sigmawire.net">
+                            <img src="https://i0.wp.com/sigmawire.net/wp-content/uploads/2023/11/cropped-Sigma-Wire-2.png?fit=32%2C32&ssl=1" alt="sigmawire">
+                            <!-- <i class="fab fa-behance"></i> -->
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a href="https://in.linkedin.com/in/kukitakasi">
+                            <img src="https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca" alt="linkedin">
+                            <!-- <i class="fab fa-facebook-f"></i> -->
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="author-thumb" style="background-image: url(assets/img/firstperson.png);">
+            </div>
+
+            <div class="container">
+                <div class="banner-top">
+                    <div class="row">
+                        <div class="col-lg-7 pr-50">
+                            <div class="information">
+                                <div class="content">
+                                    <h2>Hey <img src="assets/img/shape/harnd.png" alt="image not found"> , this is <br>Raushan</h2>
+                                    <h3 class="title">
+                                        <span class="header-caption" id="page-top">
+                                            <!-- type headline start-->
+                                            <span class="cd-headline clip is-full-width">
+                                                <!-- ROTATING TEXT -->
+                                                <span class="cd-words-wrapper">
+                                                    <b class="is-visible">WordPress Developer</b>
+                                                    <b class="is-hidden">Google Sheet & Automations</b>
+                                                    <b class="is-hidden">SEO & Marketing</b>
+                                                </span>
+                                            </span>
+                                            <!-- type headline end -->
+                                        </span>
+                                    </h3>
+                                    <a href="#contact" class="btn-standard mt-10 smooth-menu">Chat with Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Side Navbar -->
+
+        <!-- Start Expertise
+        ============================================= -->
+        <div id="services" class="expertise-area default-padding-top">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="heading-left mb-60">
+                            <h4 class="sub-title">Skilled Environment</h4>
+                            <h2 class="title">Check my expertise</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="expertise-items">
+                            <!-- Single item -->
+                            <div class="expterise-item">
+                                <div class="top">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/sheet.png" alt="sheet">
+                                    </div>
+                                    <div class="fun-fact">
+                                        <div class="counter">
+                                            <div class="timer" data-to="90" data-speed="2000">90</div>
+                                            <div class="operator">%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h4>Google Sheet</h4>
+                                </div>
+                            </div>
+                            <!-- End Single item -->
+                            <!-- Single item -->
+                            <div class="expterise-item">
+                                <div class="top">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/wordpress.png" alt="wordpress">
+                                    </div>
+                                    <div class="fun-fact">
+                                        <div class="counter">
+                                            <div class="timer" data-to="87" data-speed="2000">87</div>
+                                            <div class="operator">%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h4>WordPress</h4>
+                                </div>
+                            </div>
+                            <!-- End Single item -->
+                            <!-- Single item -->
+                            <div class="expterise-item">
+                                <div class="top">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/appscript.png" alt="google app script">
+                                    </div>
+                                    <div class="fun-fact">
+                                        <div class="counter">
+                                            <div class="timer" data-to="72" data-speed="2000">72</div>
+                                            <div class="operator">%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h4>App Script</h4>
+                                </div>
+                            </div>
+                            <!-- End Single item -->
+                            <!-- Single item -->
+                            <div class="expterise-item">
+                                <div class="top">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/linux.png" alt="javascript">
+                                    </div>
+                                    <div class="fun-fact">
+                                        <div class="counter">
+                                            <div class="timer" data-to="87" data-speed="2000">87</div>
+                                            <div class="operator">%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h4>Linux</h4>
+                                </div>
+                            </div>
+                            <!-- End Single item -->
+                            <!-- Single item -->
+                            <div class="expterise-item">
+                                <div class="top">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/chatgpt.png" alt="linux">
+                                    </div>
+                                    <div class="fun-fact">
+                                        <div class="counter">
+                                            <div class="timer" data-to="90" data-speed="2000">90</div>
+                                            <div class="operator">%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h4>AI & Chat GPT</h4>
+                                </div>
+                            </div>
+                            <!-- End Single item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End  Expertsie -->
+
+        <!-- Start Services
+        ============================================= -->
+        <div class="services-style-two-area default-padding">
+            <div class="container">
+
+                <div class="service-box">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="heading-left mb-60">
+                                <h4 class="sub-title">What i do</h4>
+                                <h2 class="title">My Specializations</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="service-style-two-items">
+                                <!-- Navigation -->
+                                <div class="services-nav">
+                                    <div class="nav-items">
+                                        <div class="services-button-prev"></div>
+                                        <div class="services-button-next"></div>
+                                    </div>
+                                </div>
+                                <div class="services-style-two-carousel swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Single item -->
+                                        <div class="swiper-slide">
+                                            <div class="services-style-two">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <h2 class="bg-text" style="background-image: url(assets/img/wordpress_site.webp);">W</h2>
+                                                    </div>
+                                                    <div class="col-lg-7 pl-50 pl-md-15 pl-xs-15">
+                                                        <div class="services-two-info">
+                                                            <h2>WordPress Website Design</h2>
+                                                            <p>
+                                                                I'm a skilled WordPress website designer, creating visually stunning and functional sites tailored to your needs. From corporate sites to e-commerce platforms, I bring your vision to life with exceptional user experiences.
+                                                            </p>
+                                                            <ul class="service-list mt-30">
+                                                                <li>Ongoing Website Maintenance</li>
+                                                                <li>Engaging Design</li>
+                                                                <li>SEO Friendly</li>
+                                                            </ul>
+                                                            <a href="#contact" class="btn btn-md circle btn-theme effect smooth-menu">Contact</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single item -->
+                                        <!-- Single item -->
+                                        <div class="swiper-slide">
+                                            <div class="services-style-two">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <h2 class="bg-text" style="background-image: url(assets/img/google_sheet.png);">S</h2>
+                                                    </div>
+                                                    <div class="col-lg-7 pl-50 pl-md-15 pl-xs-15">
+                                                        <div class="services-two-info">
+                                                            <h2>Sheet Automations</h2>
+                                                            <p>
+                                                                I specialize in Google Sheets automation, streamlining tasks and enhancing productivity. From complex formulas to custom scripts, I automate workflows, saving you time and ensuring data accuracy.
+                                                            </p>
+                                                            <ul class="service-list mt-30">
+                                                                <li>Custom dashboard design</li>
+                                                                <li>Create automations</li>
+                                                                <li>App script API integrations</li>
+                                                            </ul>
+                                                            <a href="#contact" class="btn btn-md circle btn-theme effect smooth-menu">Hire Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single item -->
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Services -->
+
+        <!-- Start Pricing
+        ============================================= -->
+        <div class="pricing-style-one-area">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-12 col-xl-4">
+                        <div class="pricing-left">
+                            <h4 class="sub-title">Pricing</h4>
+                            <h2 class="title">The best pricing start from</h2>
+                            <ul class="list-rating mt-50">
+                                <li>
+                                    Seller communication level
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i> 4.9
+                                    </div>
+                                </li>
+                                <li>
+                                    Recommend to a friend
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i> 5
+                                    </div>
+                                </li>
+                                <li>
+                                    Deliver on time
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i> 5
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 offset-xl-1">
+                        <div class="pricing-style-one-items">
+
+                            <div class="nav nav-tabs pricing-tab-navs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+                                    <span>Monthly</span>
+                                </button>
+                                <button class="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                    <span>Custom</span>
+                                </button>
+                            </div>
+
+                            <div class="tab-content pricing-tab-content" id="nav-tabContent">
+
+                                <!-- Tab Single Item -->
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
+                                    <div class="row">
+                                        <!-- Single Item -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="pricing-style-one">
+                                                <i class="fab fa-wordpress"></i>
+                                                <h4>WordPress Development</h4>
+                                                <ul>
+                                                    <li>4 Page with Elementor</li>
+                                                    <li>Design Customization</li>
+                                                    <li>Responsive Design</li>
+                                                </ul>
+                                                <div class="price">
+                                                    <h2><sup>$</sup>69</h2>
+                                                </div>
+                                                <a class="btn mt-25 btn-sm circle btn-border light" href="#contact">Order Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Item -->
+                                        <!-- Single Item -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="pricing-style-one active">
+                                                <img style="margin-bottom: 25px;" src="assets/img/icon/sheeticon.png" alt="sheet icon">
+                                                <!-- <i class="fab fa-react"></i> -->
+                                                <h4>Google Sheet</h4>
+                                                <ul>
+                                                    <li>1 dashboard design</li>
+                                                    <li>Automated Flow</li>
+                                                    <li>Custom Scripts</li>
+                                                </ul>
+                                                <div class="price">
+                                                    <h2><sup>$</sup>89</h2>
+                                                </div>
+                                                <a class="btn mt-25 btn-sm circle btn-dark" href="#contact">Order Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Item -->
+                                    </div>
+                                </div>
+                                <!-- End Tab Single Item -->
+            
+                                <!-- Tab Single Item -->
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
+                                    <div class="row">
+                                        <!-- Single Item -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="pricing-style-one active">
+                                                <i class="fab fa-wordpress"></i>
+                                                <h4>WordPress Development</h4>
+                                                <ul>
+                                                    <li>Custom page design</li>
+                                                    <li>Woo-commerce</li>
+                                                    <li>Responsive Design</li>
+                                                </ul>
+                                                <div class="price">
+                                                    <h2><sup>$</sup>299</h2>
+                                                </div>
+                                                <a class="btn mt-25 btn-sm circle btn-dark" href="#contact">Order Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Item -->
+                                        <!-- Single Item -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="pricing-style-one">
+                                                <img style="margin-bottom: 25px;" src="assets/img/icon/sheeticon.png" alt="sheet icon">
+                                                <h4>Google Sheet</h4>
+                                                <ul>
+                                                    <li>Custom workflows</li>
+                                                    <li>Script automation</li>
+                                                    <li>API integrations</li>
+                                                </ul>
+                                                <div class="price">
+                                                    <h2><sup>$</sup>349</h2>
+                                                </div>
+                                                <a class="btn mt-25 btn-sm circle btn-border light" href="#contact">Order Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Item -->
+                                    </div>
+                                </div>
+                                <!-- End Tab Single Item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pricing -->
+
+        <!-- Start About
+        ============================================= -->
+        <div id="about" class="about-style-one-area default-padding-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-style-two-thumb text-center">
+                            <img src="https://avatars.githubusercontent.com/u/73464606" alt="raushan kumar">
+                            <div class="info">
+                                <h3>Raushan</h3>
+                                <a href ="mailto:kukitakasi@naver.com">email</a>
+                                <p>
+                                    India
+                                </p>
+                                <ul class="achivement">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-wordpress"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>WordPress Developer</h5>
+                                            <p>work for – inc</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img style="width: 95px;" src="https://corenexis.com/wp-content/uploads/2020/12/cropped-corenexis-3.webp" alt="sheet icon">
+                                        </div>
+                                        <div class="info">
+                                            <h5>Developement & Growth</h5>
+                                            <p>Marketing - corenexis</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 mt-50">
+                        <div class="about-style-one-info">
+                            <h3 class="sub-title">About Me</h3>
+                            <h2 class="title">I can develop <br> that help people<span style="color: #20c997; font-size: 100px;">.</span></h2>
+                            <p>
+                                I am a dedicated WordPress developer from India, proficient in creating both blogs and e-commerce websites. My skills extend to Google Sheets automation, enhancing workflow efficiency. With a strong foundation in Linux OS and cybersecurity, I am certified by <span style="color: #20c997;">CertiProf</span>.
+                            </p>
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-user"></i> Biography</h3>
+                                <ul class="biography-table">
+                                    <li>
+                                        <h5>Name</h5>
+                                        <p>
+                                            Raushan Vishwakarma
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Birthday</h5>
+                                        <p>
+                                            05 december, 2002
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Email</h5>
+                                        <p>
+                                            kukitakasi@naver.com
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>WeChat</h5>
+                                        <p>
+                                            kukitakasi
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-rocket"></i> Personal Skill</h3>
+                                <ul class="skill-items mt-10">
+                                    <li>
+                                        <div class="icon">
+                                            <img style="max-width: 70px;" src="assets/img/icon/linux.png" alt="linux">
+                                        </div>
+                                        <div class="content">
+                                            <span>87%</span>
+                                            <h5>Maintenance & security</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img style="max-width: 50px; margin-right: 15px; margin-left: 10px;" src="assets/img/icon/sheet.png" alt="linux">
+                                        </div>
+                                        <div class="content">
+                                            <span>90%</span>
+                                            <h5>Automation & Scripts</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img style="max-width: 50px; margin-right: 15px; margin-left: 10px;" src="assets/img/icon/wordpress.png" alt="linux">
+                                        </div>
+                                        <div class="content">
+                                            <span>87%</span>
+                                            <h5>WordPress developement</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                                <ul class="education-table">
+                                    <li>
+                                        <h4>Graduation</h4>
+                                        <h5>Patliputra University.</h5>
+                                        <span>2019 - 2022</span>
+                                        <p>
+                                            Completed a Bachelor's degree in Mathematics, focusing on advanced mathematical theories and applications.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Computer information & Technologies</h4>    
+                                        <h5>Technobright EDU.</h5>
+                                        <span>2022 - 2023</span>
+                                        <p>
+                                            Studied Computer Science and Internet Technology, gaining skills in programming, networking, and IT systems management.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Start Project
+        ============================================= -->
+        <div id="portfolio" class="project-style-one-area default-padding">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="heading-left">
+                            <h4 class="sub-title">Recent Work</h4>
+                            <h2 class="title">My Projects</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row mt--50">
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <img src="assets/img/rankenhaners.webp" alt="rankenhaners">
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>WordPress Developement</span>
+                                    <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">RankEnhancers LLC</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <img src="assets/img/social_media.webp" alt="social_media">
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Google Sheets</span>
+                                    <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectsocialmedia">Social media automation</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <img src="assets/img/corenexis_web.webp" alt="core nexis">
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Website Developement</span>
+                                    <h2><a href="https://corenexis.com" data-bs-toggle="modal" data-bs-target="#projectnexis">Core Nexis</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <img src="assets/img/wordpress_posting.webp" alt="wordpress Posting">
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Google Sheets</span>
+                                    <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectwordpress">WordPress Post using Sheet	</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+
+            <!-- Start Projects Single Modal for rank enhancers -->
+            <div class="modal fade project-details" id="projectSingleModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="project-details-area">
+                                <div class="container">
+                                    <div class="project-details-items">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="project-thumb">
+                                                    <img src="assets/img/rank_full.png" alt="Thumb">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+
+                                                <div class="project-details mt-60 mt-xs-30">
+                                                    <div class="top-info">
+                                                        <div class="row">
+
+                                                            <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15 order-lg-last">
+                                                                <ul class="gallery-project-basic-info">
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Clients:</b> Ravi
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Project Type:</b> WordPress Developement
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Date:</b> 08 Feb, 2024
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Address:</b> New Delhi, India
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-lg-7">
+                                                                <h2>Best SEO Agency</h2>
+                                                                <p>
+                                                                    RankEnhancers is all about enhancing clients' online presence, so the website needed to reflect this mission. Built on WordPress, the site features a sleek, modern design with intuitive navigation. It includes pages detailing the agency's services, case studies of past successes, and a blog section for sharing industry insights. The website's layout is clean and professional, ensuring that potential clients can easily find the information they need.
+                                                                </p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-40 mb-40">
+                                                        
+                                                        <div class="col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                                                            <div class="check-list">
+                                                                <div class="single-list">
+                                                                    <h4>Mobile Optimization</h4>
+                                                                    <p>
+                                                                        Given the increasing importance of mobile traffic, we prioritized making the RankEnhancers website fully responsive. The site is designed to look great and function smoothly on all devices, from desktops to smartphones. This mobile optimization ensures that visitors have a seamless experience, regardless of how they access the site.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="single-list">
+                                                                    <h4>Marketing Automation</h4>
+                                                                    <ul class="list-disc">
+                                                                        <li>Social media marketing</li>
+                                                                        <li>Search engine optimization (seo)</li>
+                                                                        <li>Fastest Website</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <p>
+                                                        Overall, the RankEnhancers project was a success. The final website is not only visually appealing but also functional and optimized for search engines. It's a fast, responsive, and SEO-friendly platform that effectively represents Ravi's SEO agency. This project demonstrates how a well-designed website can be a powerful tool in enhancing an agency's online presence and attracting new clients.
+                                                    </p>
+                                                
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Projects Single Modal -->
+                <!-- Start Projects Single Modal for wordpress automation -->
+            <div class="modal fade project-details" id="projectwordpress" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="project-details-area">
+                                <div class="container">
+                                    <div class="project-details-items">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="project-thumb">
+                                                    <img src="assets/img/wordpress_auto_full.png" alt="Thumb">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+
+                                                <div class="project-details mt-60 mt-xs-30">
+                                                    <div class="top-info">
+                                                        <div class="row">
+
+                                                            <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15 order-lg-last">
+                                                                <ul class="gallery-project-basic-info">
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Clients:</b> Neeraj
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Project Type:</b> Google Sheet Automation of WordPress
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Date:</b> 13 Sept, 2023
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Address:</b> Bengaluru, India
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-lg-7">
+                                                                <h2>WordPress Posting Automation</h2>
+                                                                <p>
+                                                                    A client who manages several websites. Neeraj wanted a streamlined process to post content across all his sites without having to log into each one individually. The solution involved creating an automation system using Google Sheets, where Neeraj could select a website from a dropdown menu and input the featured image, headline, content, and description directly into the sheet. This system would then automatically publish the post, with the live URL of the post appearing in the same sheet.
+                                                                </p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        To achieve this, we utilized the WordPress REST API to integrate all of Neeraj's sites with Google Sheets. The setup made posting as simple as copying content from Google Docs, converting it to HTML, and pasting it into the sheet. The entire process takes less than a minute to publish a post. This automation significantly benefited Neeraj by allowing him to manage multiple sites effortlessly, posting content simultaneously across all platforms without logging into each site. This streamlined workflow has made content management far more efficient and time-saving for the client.
+                                                    </p>
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Projects Single Modal -->
+
+             <!-- Start Projects Single Modal for core nexis -->
+            <div class="modal fade project-details" id="projectnexis" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="project-details-area">
+                                <div class="container">
+                                    <div class="project-details-items">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="project-thumb">
+                                                    <img src="assets/img/corenexis_webpage.png" alt="Thumb">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+
+                                                <div class="project-details mt-60 mt-xs-30">
+                                                    <div class="top-info">
+                                                        <div class="row">
+
+                                                            <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15 order-lg-last">
+                                                                <ul class="gallery-project-basic-info">
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Clients:</b> Sia
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Project Type:</b> Website Developement
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Date:</b> 06 May, 2023
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Address:</b> Texas, USA
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-lg-7">
+                                                                <h2>Web Services WordPress Website</h2>
+                                                                <p>
+                                                                    For this project, I worked with Sia, who wanted a website for her web services agency. The requirement was to create an attractive and professional-looking site on WordPress that highlighted her expertise in marketing automation and Web3-related services. Sia wanted a visually appealing platform that could stand out and effectively showcase her services.
+                                                                </p>
+                                                                <p>
+                                                                    To meet her needs, I designed a sleek, Google-inspired WordPress website featuring a clean layout and engaging sliders, providing a polished appearance to the site. The pages were crafted using Elementor, a popular WordPress page builder, to ensure they were well-structured and visually appealing. This setup allowed Sia to easily manage and update her website content, making it a powerful tool for her business in the competitive web services market.
+                                                                </p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Projects Single Modal -->
+                 <!-- Start Projects Single Modal for social media automation -->
+            <div class="modal fade project-details" id="projectsocialmedia" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="project-details-area">
+                                <div class="container">
+                                    <div class="project-details-items">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="project-thumb">
+                                                    <img src="assets/img/social_media_sheet.png" alt="Thumb">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+
+                                                <div class="project-details mt-60 mt-xs-30">
+                                                    <div class="top-info">
+                                                        <div class="row">
+
+                                                            <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15 order-lg-last">
+                                                                <ul class="gallery-project-basic-info">
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Clients:</b> Rahul
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Project Type:</b> Automation Google Sheet
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Date:</b> 11 oct, 2023
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Address:</b> Delhi, India
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-lg-7">
+                                                                <h2>Social Media Automation using Sheet</h2>
+                                                                <p>
+                                                                    I collaborated with Rahul, who manages multiple clients' social media accounts. Rahul wanted an efficient way to post updates across various platforms, including Facebook Pages, Instagram, and LinkedIn, all at once through Google Sheets. The challenge was to streamline the posting process, as managing multiple social media handles and logging into each account separately for updates, images, or videos was becoming cumbersome.
+                                                                </p>
+                                                                <p>
+                                                                    To address this, I developed a Google Sheet-based system that allows for seamless posting across these social media platforms. The solution enables Rahul to post directly to Facebook Pages, upload reels and stories on Instagram, and share posts and articles on LinkedIn—all from a single Google Sheet interface. This automation has made managing multiple social media accounts significantly easier and more efficient, saving Rahul time and effort.
+                                                                </p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Projects Single Modal -->
+            
+        </div>
+        <!-- End Project -->
+
+        <!-- Start Testimonial
+        ============================================= -->
+        <div class="testimonial-style-one-area default-padding-bottom">
+            <div class="container">
+                <div class="testimonial-style-one-box">
+
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="site-heading text-center">
+                                <h4 class="sub-title">Testimonials</h4>
+                                <h2 class="title">Customers feedback</h2>
+                                <div class="devider"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="testimonial-carousel text-center swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Single item -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-style-one">
+                                            
+                                            <div class="item">
+                                                <div class="thumb">
+                                                    <img src="assets/img/sia.webp" alt="Image Not Found">
+                                                </div>
+                                                <div class="content">
+                                                    <p>
+                                                        “Raushan did an outstanding job developing our web services website. We needed a platform to showcase and sell our services, including Web3 services and marketing solutions. He created a user-friendly WordPress site that not only looks professional but is also easy to manage and update. Raushan's attention to detail and understanding of our needs made the whole process smooth and efficient. I'm thrilled with the final product and highly recommend him for website development projects.”
+                                                    </p>
+                                                </div>
+                                                <div class="provider">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h4>Sia</h4>
+                                                        <span>Co-Founder of Corenexis</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Single item -->
+                                    <!-- Single item -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-style-one">
+                                            <div class="item">
+                                                <div class="thumb">
+                                                    <img src="assets/img/david.webp" alt="Image Not Found">
+                                                </div>
+                                                <div class="content">
+                                                    <p>
+                                                        “Working with Raushan on our Google Sheets automation project was a game-changer for our company. He set up an efficient system where daily tasks are automatically assigned to all employees, ensuring everyone knows their responsibilities and can complete them on time. This automation has streamlined our workflow and made it easy for me to track the progress of each task. I highly recommend Raushan for his expertise and professionalism.”
+                                                    </p>
+                                                </div>
+                                                <div class="provider">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h4>David Park</h4>
+                                                        <span>Head of PieSoft llc</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Single item -->
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Testimonil End -->
+
+        <!-- Start Brand
+        ============================================= -->
+        <div class="brand-style-one-area relative text-center">
+            <div class="container">
+
+                <div class="brand-heading">
+                    <div class="row">
+                        <h3>Thrusted By <strong>100+ </strong> Customers</h3>
+                    </div>
+                </div>
+
+                <div class="brand-style-one">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="brand5col swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper align-center">
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/brand/nexis.webp" alt="Thumb">
+                                    </div>
+                                    <!-- End Single Item -->
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/brand/sigmawire.webp" alt="Thumb">
+                                    </div>
+                                    <!-- End Single Item -->
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/brand/rankenhancers.webp" alt="Thumb">
+                                    </div>
+                                    <!-- End Single Item -->
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/brand/gvwow.webp" alt="Thumb">
+                                    </div>
+                                    <!-- End Single Item -->
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/brand/the30top.webp" alt="Thumb">
+                                    </div>
+                                    <!-- End Single Item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Brand -->
+                </div>
+
+            </div>
+        </div>
+        <!-- Brand End -->
+
+        <!-- Start Blog
+        ============================================= -->
+        <div id="blog" class="home-blog default-padding-top bottom-less">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4 class="sub-title">News & Article</h4>
+                            <h2 class="title">Latest from blog</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+    
+                    <!-- Single item -->
+                    <div class="blog-style-one mb-30 col-xl-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="disk-space-full-in-linux-ubuntu-or-mint.html"><img src="https://sigmawire.net/wp-content/uploads/2024/05/Disk-Space-Full-in-Linux.webp" alt="Thumb"></a>
+                                <div class="inner-date">
+                                    <strong>24</strong> July, 2024
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a href="disk-space-full-in-linux-ubuntu-or-mint.html">Disk Space Full in Linux Ubuntu or Mint: How to Fix it?</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Raushan</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single item -->
+    
+                    <!-- Single item -->
+                    <div class="blog-style-one mb-30 col-xl-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="how-to-fix-initramfs-error.html"><img src="https://sigmawire.net/wp-content/uploads/2024/02/Initramfs-Error-1.webp" alt="Thumb"></a>
+                                <div class="inner-date">
+                                    <strong>17</strong> Feb, 2024
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a href="how-to-fix-initramfs-error.html">How To Fix Initramfs Error On Boot Menu in any Linux OS</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Raushan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1 Comments</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single item -->
+    
+                    <!-- Single item -->
+                    <div class="blog-style-one mb-30 col-xl-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="top-5-best-free-vpns.html"><img src="https://sigmawire.net/wp-content/uploads/2023/09/vpn.webp" alt="Thumb"></a>
+                                <div class="inner-date">
+                                    <strong>19</strong> Aug, 2024
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4>
+                                    <a href="top-5-best-free-vpns.html">Top 5 Best Free VPNs for Every Linux Users Can Use in 2024</a>
+                                </h4>
+                                <div class="meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Raushan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2 Comments</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single item -->
+    
+                </div>
+            </div>
+            
+        </div>
+        <!-- End Blog -->
+
+       <!-- Start Contact
+        ============================================= -->
+        <div id="contact" class="contact-area contact-page overflow-hidden default-padding" style="background-image: url(assets/img/shape/map.png);">
+            <div class="container">
+                <div class="row">
+                    
+    
+                    <div class="col-tact-stye-one col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                        <div class="contact-style-one-info">
+                            <div class="top-info">
+                                <h2 class="gradient-text">Let's Chat</h2>
+                                <div class="call">
+                                    <img src="assets/img/icon/wechat.png" alt="Image not Found">
+                                    <a class="phone-link" href="tel:+4733378901">kukitakasi</a>
+                                </div>
+                            </div>
+                            <ul class="contact-address">
+                                <li>
+                                    <div class="info">
+                                        <h4>Location</h4>
+                                        <p>
+                                            Patna <br> Bihar, India
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <h4>Official Email</h4>
+                                        <a href="mailto:kukitakasi@naver.com">kukitakasi@naver.com</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="copyright">
+                                &copy; 2024 kukitakasi. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-tact-stye-one col-lg-7 pl-60 pl-md-15 pl-xs-15 mt-md-50 mt-xs-50">
+                        <div class="contact-form-style-one">
+                            <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form mt-30">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group comments">
+                                            <textarea class="form-control" id="comments" name="comments" placeholder="Descibe your criteria *"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit" id="submit">
+                                            <i class="fa fa-paper-plane"></i> Get in Touch
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Alert Message -->
+                                <div class="col-lg-12 alert-notification">
+                                    <div id="message" class="alert-msg"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <!-- End Signle Item -->
+    </div>
+
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.scrolla.min.js"></script>
+    <script src="assets/js/ScrollOnReveal.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/validnavs.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
